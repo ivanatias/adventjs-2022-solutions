@@ -14,7 +14,7 @@ describe('challenge #3 tests', () => {
     const reindeers = ['dasher', 'dancer']
 
     const returnedValue = distributeGifts(packOfGifts, reindeers)
-    expect(returnedValue).toEqual(2)
+    expect(returnedValue).toBe(2)
   })
 
   test('distributeGifts function returns 1 pack of gifts', () => {
@@ -22,7 +22,7 @@ describe('challenge #3 tests', () => {
     const reindeers = ['d', 'e']
 
     const returnedValue = distributeGifts(packOfGifts, reindeers)
-    expect(returnedValue).toEqual(1)
+    expect(returnedValue).toBe(1)
   })
 
   test('distributeGifts function returns 0 if reindeers can not carry any pack', () => {
@@ -30,7 +30,7 @@ describe('challenge #3 tests', () => {
     const reindeers = ['midu']
 
     const returnedValue = distributeGifts(packOfGifts, reindeers)
-    expect(returnedValue).toEqual(0)
+    expect(returnedValue).toBe(0)
   })
 
   test('distributeGifts function returns 5 packs of gifts', () => {
@@ -47,7 +47,7 @@ describe('challenge #3 tests', () => {
     ]
 
     const returnedValue = distributeGifts(packOfGifts, reindeers)
-    expect(returnedValue).toEqual(5)
+    expect(returnedValue).toBe(5)
   })
 
   test('distributeGifts function returns 26 packs of gifts', () => {
@@ -64,6 +64,6 @@ describe('challenge #3 tests', () => {
     ]
 
     const returnedValue = distributeGifts(packOfGifts, reindeers)
-    expect(returnedValue).toEqual(26)
+    expect(returnedValue).toBe(26)
   })
 })
