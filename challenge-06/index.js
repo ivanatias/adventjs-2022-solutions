@@ -21,7 +21,7 @@ function createCube(size) {
     )
   }
 
-  return [cubeTop, cubeBottom].flat().join('\n')
+  return cubeTop.concat(cubeBottom).join('\n')
 }
 
 module.exports = createCube
