@@ -15,10 +15,10 @@ describe('challenge #2 tests', () => {
     const holidays = ['01/06', '04/01', '12/25']
 
     const firstReturnedValue = countHours(year1, holidays)
-    expect(firstReturnedValue).toEqual(4)
+    expect(firstReturnedValue).toBe(4)
 
     const secondReturnedValue = countHours(year2, holidays)
-    expect(secondReturnedValue).toEqual(4)
+    expect(secondReturnedValue).toBe(4)
   })
 
   test('countHours function returns 10 total extra hours', () => {
@@ -35,7 +35,7 @@ describe('challenge #2 tests', () => {
     ]
 
     const returnedValue = countHours(year, holidays)
-    expect(returnedValue).toEqual(10)
+    expect(returnedValue).toBe(10)
   })
 
   test('countHours function returns 0 total extra hours', () => {
