@@ -1,7 +1,7 @@
 {
   "name": "challenge-08",
   "version": "1.0.0",
-  "description": "AdventJS Challenge #9",
+  "description": "AdventJS Challenge #10",
   "main": "index.js",
   "scripts": {
     "test": "jest",
