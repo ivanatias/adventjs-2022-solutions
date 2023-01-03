@@ -6,19 +6,19 @@ Each reindeer starts at the top of the pyramid and must choose the optimal path 
 
 When arriving at a position, the reindeer can only slide down and diagonally to the left or right. Visually, the pyramid looks like this:
 
-        0
-       / \
-      7   4
-     / \ / \
-    2   4   6
+            0
+           / \
+          7   4
+         / \ / \
+        2   4   6
 
 In code we represent it like this:
 
-    [
-      [0],
-      [7, 4],
-      [2, 4, 6]
-    ]
+        [
+          [0],
+          [7, 4],
+          [2, 4, 6]
+        ]
 
 Santa Claus needs a program that tells him what the minimum time each reindeer can take to slide down the pyramid using the optimal path.
 
@@ -26,11 +26,11 @@ In the previous example, the optimal path is `0 -> 4 -> 4`, which takes a total 
 
 Why is it not `6`? It is not `0 -> 4 -> 2` because when you go down to the position of the `4` you can no longer diagonally reach the position of the `2`. So the shortest possible path is `8`. More examples:
 
-    getOptimalPath([[0], [2, 3]]) // 2
+        getOptimalPath([[0], [2, 3]]) // 2
 
-    getOptimalPath([[0], [3, 4], [9, 8, 1]]) // 5
+        getOptimalPath([[0], [3, 4], [9, 8, 1]]) // 5
 
-    getOptimalPath([[1], [1, 5], [7, 5, 8], [9, 4, 1, 3]]) // 8
+        getOptimalPath([[1], [1, 5], [7, 5, 8], [9, 4, 1, 3]]) // 8
 
 To keep in mind:
 

@@ -8,12 +8,12 @@ But Santa Claus does not get quickly if there is too much or too little left to 
 
 For example, if the task lasts `03:00:00` and they have been working for `01:00:00` then they have already completed `1/3` of the task. In code:
 
-    getCompleted('01:00:00', '03:00:00') // '1/3'
-    getCompleted('02:00:00', '04:00:00') // '1/2'
-    getCompleted('01:00:00', '01:00:00') // '1/1'
-    getCompleted('00:10:00', '01:00:00') // '1/6'
-    getCompleted('01:10:10', '03:30:30') // '1/3'
-    getCompleted('03:30:30', '05:50:50') // '3/5
+        getCompleted('01:00:00', '03:00:00') // '1/3'
+        getCompleted('02:00:00', '04:00:00') // '1/2'
+        getCompleted('01:00:00', '01:00:00') // '1/1'
+        getCompleted('00:10:00', '01:00:00') // '1/6'
+        getCompleted('01:10:10', '03:30:30') // '1/3'
+        getCompleted('03:30:30', '05:50:50') // '3/5
 
 Note:
 
